@@ -1,0 +1,10 @@
+@import "./common.css";
+@import "./layouts/footer.css";
+@import "./layouts/header.css";
+@import "./section/home.css";
+@import "./section/class.css";
+@import "./section/trainers.css";
+@import "./section/purcase.css";
+@import "./section/review.css";
+@import "./section/contact.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");

@@ -1,0 +1,229 @@
+header {
+  background-image: url("../../assets/img/hero-man.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 5rem;
+  padding-top: 90px;
+  .mobile-nav {
+    display: none;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 70%;
+    margin: 0 auto;
+
+    z-index: 10000;
+
+    .logo img {
+      max-width: 190px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      align-items: baseline;
+
+      ul {
+        display: flex;
+        gap: 1.5rem;
+        a {
+          color: var(--color-white);
+          font-weight: 800;
+        }
+      }
+      button {
+        border-radius: 0.3rem;
+        padding: 0.2rem 0.5rem;
+        background-color: var(--color-orange);
+        color: var(--color-white);
+        font-size: 0.95em;
+        font-weight: 800;
+      }
+    }
+  }
+  /* Header Hero */
+  .header-hero {
+    color: var(--color-white);
+    max-width: 70%;
+    padding: 5rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    h1 {
+      font-weight: 800;
+      font-size: 4.7rem;
+      margin: 0;
+    }
+
+    button {
+      color: var(--color-white);
+      background-color: var(--bg-color);
+      padding: 0.1rem 0.6rem;
+      border-radius: 0.3rem;
+      font-size: 1.4em;
+      font-weight: 800;
+      border: 1px solid transparent;
+    }
+    p {
+      background-color: rgba(0, 0, 0, 0.7);
+      font-weight: 600;
+      font-size: 1.6em;
+      line-height: 1.6em;
+      min-height: calc(1.2em * 3);
+      padding-left: 0.5em;
+      margin: 0;
+    }
+    button:nth-child(1) {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      display: block;
+      max-width: fit-content;
+    }
+
+    .header-hero-buttons {
+      button {
+        padding: 0.4rem 1rem;
+        margin-right: 3rem;
+        display: inline-block;
+        transition: 0.3s ease;
+      }
+    }
+
+    button:hover {
+      background-color: transparent;
+      border: 1px solid var(--color-white);
+    }
+  }
+}
+
+.scrolled {
+  background-color: #355592;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  transition: 0.3s ease;
+}
+/* 576px Media Query*/
+
+@media (max-width: 576px) {
+  header .navigation {
+    display: none;
+  }
+  header {
+    padding: 0 1rem;
+    margin: 0;
+    .mobile-nav {
+      transition: 0.3s ease;
+      display: inline-block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      .active {
+        display: none;
+      }
+
+      .nav-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          max-width: 190px;
+          margin: 0;
+          padding: 0;
+          margin-left: 1rem;
+        }
+      }
+      i {
+        cursor: pointer;
+        font-size: 3rem;
+        color: var(--color-white);
+        margin-right: 1rem;
+      }
+      ul {
+        background-color: #355692;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        position: absolute;
+        width: 100%;
+        height: min-content;
+        top: 0;
+        left: 0;
+        padding-top: 4rem;
+        z-index: -1;
+
+        li {
+          margin-top: 1rem;
+          text-align: center;
+          a {
+            color: var(--color-white);
+            font-weight: 800;
+          }
+
+          button {
+            border-radius: 0.3rem;
+            padding: 0.2rem 0.5rem;
+            background-color: var(--color-orange);
+            color: var(--color-white);
+            font-size: 0.95em;
+            font-weight: 800;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  /* Hero */
+  #hero {
+    padding: 10rem 0 6rem 0;
+    margin: 0;
+    max-width: 100%;
+
+    h1 {
+      font-size: 3.5rem;
+    }
+    h1 br {
+      display: none;
+    }
+    p {
+      font-weight: 600;
+      font-size: 1.4em;
+      line-height: 1.4em;
+      padding-left: 0.5em;
+    }
+    button {
+      padding: 0.2rem 1.3rem;
+      transition: 0.3s ease;
+    }
+    .header-hero-buttons {
+      button {
+        padding: 0.6rem 2rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        transition: 0.3s ease;
+        width: 100%;
+        text-align: start;
+      }
+      button:nth-child(1) {
+        text-shadow: none;
+        display: block;
+        max-width: 100%;
+      }
+    }
+  }
+}

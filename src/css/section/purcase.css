@@ -1,0 +1,59 @@
+.purcase {
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.9rem;
+    .card {
+      border: none;
+      border-radius: 0.6rem;
+      overflow: hidden;
+      max-width: 230px;
+      box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.3);
+
+      img {
+        object-fit: cover;
+        height: auto;
+      }
+      .card-body {
+        padding: 0.1rem;
+        h4 {
+          font-size: 1.4rem;
+        }
+        p {
+          margin-bottom: 1.1rem;
+          color: var(--text-color);
+          font-size: 0.9rem;
+        }
+
+        button {
+          margin: 0;
+          padding: 0.3rem;
+          width: 100%;
+          background-color: var(--color-white);
+          position: relative;
+          font-weight: 700;
+          font-size: 0.9em;
+
+          i {
+            position: absolute;
+            left: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 576px Media Query*/
+
+@media (max-width: 576px) {
+  .purcase {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
