@@ -55,3 +55,7 @@ src/
 ├── App.jsx          # Main application layout
 └── main.jsx         # Entry point
 ```
+## License
+
+MIT License
+
