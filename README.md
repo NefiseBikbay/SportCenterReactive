@@ -2,7 +2,7 @@
 
 A single-page sports center promotional website.
 
-[**Local Preview**](https://nefiinef.github.io/SportCenterReactive/)
+[**Local Preview**](https://nefisebikbay.github.io/SportCenterReactive/)
 
 ## Features
 
